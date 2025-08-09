@@ -1,0 +1,1946 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "neue haas grotesk display pro";
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#main {
+  position: relative;
+  z-index: 10;
+}
+
+@media (max-width: 480px) {
+  #pageOne {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 0 2vw;
+    background-color: #efeae3;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 12px;
+  }
+
+  #menuForPhone p {
+    border: 0.1px solid black;
+    border-radius: 50px;
+    padding: 13px 13px;
+    font-weight: 200;
+    font-size: 17px;
+    position: relative;
+    transition: all ease 0.4s;
+    overflow: hidden;
+    display: block;
+  }
+
+  #menuForPhone p a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #menuForPhone i {
+    padding-right: 7px;
+  }
+
+  nav div p {
+    display: none;
+  }
+
+  #sectionTwo {
+    /* width: 100vw; */
+    height: 70vh;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 2vh;
+    border-bottom: 1px solid #bfbbb6;
+    justify-content: space-between;
+    padding-top: 70vh;
+  }
+
+  #sectionTwo .firstH1 {
+    line-height: 25px;
+    font-size: 4vw;
+    line-height: 104%;
+    padding-bottom: 0.5vw;
+    padding-left: 2vh;
+    font-weight: bolder;
+    width: 50%;
+    letter-spacing: -1px;
+    padding-top: 10vh;
+    position: relative;
+    z-index: 10;
+  }
+
+  #sectionTwo .secondH1 {
+    text-align: end;
+    font-weight: bolder;
+    width: 60%;
+    line-height: 78%;
+    letter-spacing: -4px;
+    font-size: 16vw;
+    align-items: end;
+    position: relative;
+    left: 35%;
+    top: 2%;
+  }
+
+  #sideShapes {
+    position: absolute;
+    right: 0%;
+    top: 63vh;
+    width: 50%;
+  }
+
+  .shapeOne {
+    background: linear-gradient(#fe330a, #fe3116);
+    filter: blur(20px);
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+    color: green;
+    width: 50vw;
+    height: 50vw;
+    position: absolute;
+  }
+
+  .shapeTwo {
+    background: linear-gradient(#fe330a, #fe4416);
+    filter: blur(25px);
+    width: 30vw;
+    height: 50vw;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: animation1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes animation1 {
+    from {
+      transform: translate(-5%, 30%);
+    }
+    to {
+      transform: translate(55%, -20%);
+    }
+  }
+
+  .shapeThree {
+    background: linear-gradient(#fe330a, #fe3116);
+    filter: blur(20px);
+    width: 33vw;
+    border-radius: 50%;
+    height: 30vw;
+    position: absolute;
+    animation-name: animation2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes animation2 {
+    from {
+      transform: translate(50%, 13%);
+    }
+    to {
+      transform: translate(-32%, 13%);
+    }
+  }
+
+  #mainVideo {
+    margin-top: 3vh;
+    border-radius: 24px;
+    position: relative;
+    z-index: 10;
+    width: 90%;
+    margin-left: 5%;
+    height: 79vh;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  #movingText {
+    white-space: nowrap;
+    overflow-x: auto;
+    padding: 3% 0vw;
+  }
+
+  #movingText::-webkit-scrollbar {
+    display: none;
+  }
+
+  .con h1 {
+    display: inline-block;
+    font-size: 9vw;
+  }
+
+  .container {
+    white-space: nowrap;
+  }
+
+  .con {
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: moveText;
+    animation-timing-function: linear;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+  }
+
+  .gola {
+    background-color: #fe3116;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px 30px;
+  }
+
+  @keyframes moveText {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  #sectionThree {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    position: relative;
+    z-index: 12;
+    padding: 0vw 2vw;
+  }
+
+  #sectionThree #TP1 {
+    width: 100%;
+    /* line-height: 3.5vw; */
+    font-weight: bolder;
+    font-size: 2.3vw;
+  }
+
+  #sectionThree #TP1 h1 {
+    padding: 0px 8vw;
+  }
+
+  #sectionThree #TP2 {
+    width: 100vw;
+    /* width: 60vw; */
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #sectionThree #TP2 p {
+    width: 79%;
+    font-size: 16px;
+  }
+
+  #sectionThree #TP2 img {
+    width: 80%;
+    height: 200px;
+    border-radius: 20px;
+    margin-bottom: 3vw;
+  }
+
+  #subTP1 {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding-left: 20px;
+  }
+
+  #subTP1 div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fe3116;
+  }
+
+  #subTP1 p {
+    font-size: 16px;
+    font-weight: 100;
+  }
+
+  #circleShapes {
+    width: 46%;
+    height: 70%;
+    left: 55%;
+    top: 8%;
+    position: absolute;
+  }
+
+  #circleOne {
+    background-color: #ff9831;
+    filter: blur(10px);
+    width: 43vw;
+    height: 43vw;
+    border-radius: 50%;
+    position: absolute;
+    left: 6%;
+  }
+
+  #circleTwo {
+    background-color: #fe330a;
+    filter: blur(10px);
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+    position: absolute;
+    left: 6%;
+    animation-name: circleAnimation;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes circleAnimation {
+    from {
+      transform: translate(11%, -110%) skew(0 deg);
+    }
+    to {
+      transform: translate(-12%, 10%) skew(10deg);
+    }
+  }
+
+  #pageTwo {
+    width: 100%;
+    position: relative;
+    background-color: #efeae3;
+    min-height: 115vh;
+  }
+
+  #pageThree {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: #efeae3;
+  }
+
+  .phoneProjectImages {
+    width: 100%;
+    height: 51vh;
+    border-radius: 20px;
+  }
+
+  #projectSections {
+    padding: 30px 0px;
+  }
+
+  .projects {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center;*/
+    /* border-bottom:1px solid rgba(207, 201, 201); */
+    padding: 15px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .projects h1 {
+    font-size: 9vw;
+    padding-top: 10px;
+    position: relative;
+    z-index: 9;
+  }
+
+  .projects div {
+    position: relative;
+    z-index: 9;
+  }
+
+  .projects div p {
+    color: grey;
+  }
+
+  #allProjectsButton p {
+    border: 1px solid black;
+    padding: 13px 20px;
+    border-radius: 50px;
+    width: fit-content;
+    font-weight: 400;
+    margin-left: 15px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #allProjectsButton p a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    z-index: 90;
+  }
+
+  #pageFour {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 12vh 6vw;
+    background-color: #efeae3;
+  }
+
+  #DPE {
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 98vh;
+  }
+
+  #DPELeft {
+    padding: 7vh 0vw 4vh 8vw;
+    display: flex;
+  }
+
+  #DPESidebar {
+    background-color: rgb(255, 255, 255);
+    width: 0.2vw;
+    height: 24vh;
+  }
+
+  #sideHeadings {
+    width: 80%;
+    cursor: pointer;
+  }
+
+  #sideHeadings h1 {
+    padding: 0.5vh 3vw;
+    font-size: 8vw;
+    line-height: 35px;
+    color: rgb(80, 74, 69);
+    transition: all ease 0.5s;
+  }
+
+  #sideHeadings p {
+    color: white;
+    margin-top: 5vh;
+    font-size: 3vw;
+    transition: all ease-in-out 2s;
+  }
+
+  #DPEImg {
+    height: 45vh;
+    border-radius: 13px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all ease-in-out 0.5s;
+    background-image: url(public/img1.webp);
+  }
+
+  #pageFive {
+    width: 100%;
+    min-height: 80vh;
+    background-color: #efeae3;
+  }
+
+  .swiper-wrapper {
+    padding: 50px 65px;
+  }
+
+  .swiper {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .swiper-slide {
+    font-size: 18px;
+    padding: 0px 0px 0px 30px;
+    border-left: 0.5px solid grey;
+  }
+
+  .swiper-slide p {
+    width: 71.8%;
+    font-size: 14px;
+    margin-top: 0.9vw;
+  }
+
+  .swiper-slide img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .help {
+    margin-left: 45px;
+  }
+  #pageSix {
+    width: 100vw;
+    height: 110vh;
+  }
+
+  #footerPage {
+    width: 100vw;
+    height: 110vh;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    color: white;
+    /* padding-top: 28vw; */
+    background-color: #fe330a;
+    z-index: 0;
+    padding: 28vw 3vw 1vw 3vw;
+  }
+  #footerMainHeading {
+    padding-top: 30vw;
+  }
+  #footerMainHeading h1 {
+    color: white;
+    line-height: 90%;
+    font-size: 22vw;
+    text-align: center;
+    position: relative;
+    z-index: 12;
+  }
+
+  #textAndEmail {
+    display: flex;
+    justify-content: space-between;
+    padding: 6.1vw 5.4vw 0vw 5.4vw;
+  }
+  #texts {
+    padding-top: 1.9vw;
+    padding-left: 0.3vw;
+  }
+  #email {
+    width: 50%;
+    padding-top: 5vw;
+    padding-left: 1vw;
+  }
+  #email input {
+    background-color: transparent;
+    border: none;
+    color: white;
+    border-bottom: 1px solid white;
+    font-size: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 0.4vw;
+    width: 90%;
+  }
+  #email p {
+    font-size: 3vw;
+    font-weight: 100;
+  }
+  #socials {
+    border-top: 1px solid #bfbbb6;
+    padding: 2vw 2vw;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+    font-size: 2.3vw;
+  }
+  #footerShapes {
+    position: absolute;
+    bottom: 17%;
+    background-color: black;
+    filter: blur(20px);
+    width: 110vw;
+    border-top-right-radius: 50%;
+    left: 0%;
+    height: 25vw;
+    z-index: 3;
+  }
+  #fShapeOne {
+    z-index: 4;
+    position: absolute;
+    background-color: black;
+    filter: blur(20px);
+    width: 27vw;
+    height: 27vw;
+    right: 0;
+    border-radius: 50%;
+    animation-name: footerAnimation1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes footerAnimation1 {
+    from {
+      transform: translate(-140%, -70%) skew(0deg);
+    }
+    to {
+      transform: translate(20%, -10%) skew(30deg);
+    }
+  }
+  #fShapeTwo {
+    position: absolute;
+    background-color: black;
+    filter: blur(20px);
+    width: 27vw;
+    height: 27vw;
+    z-index: 5;
+    right: 30%;
+    border-radius: 50%;
+    animation-name: footerAnimation2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes footerAnimation2 {
+    from {
+      transform: translate(-30%, -98%) skew(0deg);
+    }
+    to {
+      transform: translate(-220%, 20%) skew(30deg);
+    }
+  }
+  #fShapeThree {
+    position: absolute;
+    background-color: black;
+    width: 60vw;
+    height: 90vh;
+    rotate: -30deg;
+    left: 0%;
+    top: -40%;
+    border-radius: 40%;
+    z-index: 6;
+  }
+  #fShapeFour {
+    position: absolute;
+    background-color: black;
+    width: 65vw;
+    height: 90vh;
+    rotate: 30deg;
+    right: 10%;
+    top: -40%;
+    border-radius: 40%;
+    z-index: 7;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  #pageOne {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 0 2vw;
+    background-color: #efeae3;
+  }
+
+  #menuForPhone {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0px;
+  }
+
+  nav div {
+    display: flex;
+    gap: 14px;
+  }
+
+  nav div p {
+    border: 0.65px solid black;
+    border-radius: 50px;
+    padding: 13px 20px;
+    font-weight: bold;
+    font-size: 17px;
+    position: relative;
+    transition: all ease 0.4s;
+    overflow: hidden;
+  }
+
+  nav div p::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50px;
+  }
+
+  nav div p:hover::after {
+    bottom: 0%;
+    transition: all ease 0.4s;
+    color: white;
+    border-radius: 0px;
+  }
+
+  nav div p a {
+    z-index: 9;
+    position: relative;
+    text-decoration: none;
+    color: black;
+  }
+
+  nav div p:hover a {
+    color: white;
+  }
+
+  #sectionTwo {
+    width: 100%;
+    height: 77vh;
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 1px solid #bfbbb6;
+    justify-content: space-between;
+  }
+
+  #sectionTwo .firstH1 {
+    line-height: 25px;
+    font-size: 2.2vw;
+    line-height: 104%;
+    padding-bottom: 4.5vw;
+    padding-left: 2vh;
+    font-weight: bolder;
+    width: 50%;
+    letter-spacing: -1px;
+  }
+
+  #sectionTwo .secondH1 {
+    padding-right: 20px;
+    padding-bottom: 9.4vh;
+    text-align: end;
+    font-weight: bolder;
+    width: 50%;
+    line-height: 78%;
+    letter-spacing: -4px;
+    font-size: 10.4vw;
+  }
+
+  #sideShapes {
+    position: absolute;
+    right: 0%;
+    top: 83vh;
+    width: 50%;
+  }
+
+  .shapeOne {
+    background: linear-gradient(#fe330a, #fe3116);
+    filter: blur(20px);
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+    color: green;
+    width: 50vw;
+    height: 50vw;
+    position: absolute;
+  }
+
+  .shapeTwo {
+    background: linear-gradient(#fe330a, #fe4416);
+    filter: blur(25px);
+    width: 30vw;
+    height: 50vw;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: animation1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  .shapeThree {
+    background: linear-gradient(#fe330a, #fe3116);
+    filter: blur(20px);
+    width: 33vw;
+    border-radius: 50%;
+    height: 30vw;
+    position: absolute;
+    animation-name: animation2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes animation1 {
+    from {
+      transform: translate(-5%, 10%);
+    }
+    to {
+      transform: translate(35%, -10%);
+    }
+  }
+
+  @keyframes animation2 {
+    from {
+      transform: translate(10%, 13%);
+    }
+    to {
+      transform: translate(-22%, 13%);
+    }
+  }
+
+  #mainVideo {
+    margin-top: 8vh;
+    border-radius: 24px;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+  }
+
+  #movingText {
+    white-space: nowrap;
+    overflow-x: auto;
+    padding: 7% 0vw;
+  }
+
+  #movingText::-webkit-scrollbar {
+    display: none;
+  }
+
+  .con h1 {
+    display: inline-block;
+    font-size: 9vw;
+  }
+
+  .container {
+    white-space: nowrap;
+  }
+
+  .con {
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: moveText;
+    animation-timing-function: linear;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+  }
+
+  .gola {
+    background-color: #fe3116;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px 30px;
+  }
+
+  @keyframes moveText {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  #sectionThree {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 12;
+    padding: 3vw 3.5vw;
+  }
+
+  #sectionThree #TP1 {
+    width: 60%;
+    line-height: 3.5vw;
+    font-weight: bolder;
+    font-size: 2vw;
+    text-align: center;
+  }
+
+  #sectionThree #TP2 {
+    /* width: 35vw; */
+    padding-left: 12vw;
+    padding-top: 70px;
+  }
+
+  #sectionThree #TP2 p {
+    width: 85%;
+    font-size: 16px;
+  }
+
+  #sectionThree #TP2 img {
+    width: 65vw;
+    height: 30vw;
+    border-radius: 20px;
+    margin-bottom: 3vw;
+  }
+
+  #subTP1 {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding-left: 20px;
+    padding-top: 50px;
+  }
+
+  #subTP1 div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fe3116;
+  }
+
+  #subTP1 p {
+    font-size: 16px;
+    font-weight: 100;
+  }
+
+  #circleShapes {
+    width: 46%;
+    height: 70%;
+    left: 50%;
+    top: 16vw;
+    position: absolute;
+  }
+
+  #circleOne {
+    background-color: #ff9831;
+    filter: blur(10px);
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+    position: absolute;
+    left: 6%;
+  }
+
+  #circleTwo {
+    background-color: #fe330a;
+    filter: blur(10px);
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+    position: absolute;
+    left: 6%;
+    animation-name: circleAnimation;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes circleAnimation {
+    from {
+      transform: translate(11%, -11%) skew(0 deg);
+    }
+    to {
+      transform: translate(-10%, 3%) skew(10deg);
+    }
+  }
+
+  #pageTwo {
+    width: 100%;
+    position: relative;
+    background-color: #efeae3;
+    min-height: 140vh;
+  }
+
+  #pageThree {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: #efeae3;
+  }
+
+  .phoneProjectImages {
+    width: 60%;
+    height: 51vh;
+    border-radius: 20px;
+    margin-bottom: 30px;
+  }
+
+  #projectSections {
+    padding: 60px 0px;
+  }
+
+  .projects {
+    display: flex;
+    /* width: 50%; */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom:1px solid rgba(207, 201, 201); */
+    padding: 22px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .projects h1 {
+    position: relative;
+    z-index: 9;
+  }
+
+  .projects div {
+    position: relative;
+    z-index: 9;
+    text-align: center;
+  }
+
+  #allProjectsButton p {
+    border: 1px solid black;
+    padding: 13px 20px;
+    border-radius: 50px;
+    width: fit-content;
+    font-weight: 400;
+    margin-left: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #allProjectsButton p::after {
+    content: "";
+    width: 140px;
+    height: 60px;
+    background-color: black;
+    position: absolute;
+    left: -2%;
+    bottom: -135%;
+    border-radius: 30%;
+    transition: all ease-in-out 0.4s;
+  }
+
+  #allProjectsButton p a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    z-index: 90;
+  }
+
+  #allProjectsButton p:hover::after {
+    bottom: -5%;
+    border-radius: 0px;
+  }
+
+  #allProjectsButton p:hover a {
+    color: white;
+    font-weight: 400;
+  }
+
+  #pageFour {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 12vh 2vw;
+    background-color: #efeae3;
+  }
+
+  #DPE {
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 98vh;
+  }
+
+  #DPELeft {
+    padding: 7vh 0vw 4vh 8vw;
+    display: flex;
+  }
+
+  #DPESidebar {
+    background-color: rgb(255, 255, 255);
+    width: 0.2vw;
+    height: 24vh;
+  }
+
+  #sideHeadings {
+    width: 80%;
+    cursor: pointer;
+  }
+
+  #sideHeadings h1 {
+    padding: 0.5vh 3vw;
+    font-size: 5.5vw;
+    line-height: 35px;
+    color: rgb(80, 74, 69);
+    transition: all ease 0.5s;
+  }
+
+  #sideHeadings p {
+    color: white;
+    margin-top: 5vh;
+    font-size: 2vw;
+    transition: all ease-in-out 2s;
+  }
+
+  #DPEImg {
+    height: 50vh;
+    border-radius: 13px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all ease-in-out 0.5s;
+    background-image: url(public/img1.webp);
+  }
+
+  #pageFive {
+    width: 100%;
+    min-height: 80vh;
+    padding-top: 30px;
+    background-color: #efeae3;
+  }
+
+  .swiper-wrapper {
+    padding: 50px 65px;
+  }
+
+  .swiper {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .swiper-slide {
+    font-size: 18px;
+    padding: 0px 0px 0px 30px;
+    border-left: 0.5px solid grey;
+  }
+
+  .swiper-slide p {
+    width: 71.8%;
+    font-size: 14px;
+    margin-top: 0.9vw;
+  }
+
+  .swiper-slide img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .help {
+    margin-left: 45px;
+  }
+  #pageSix {
+    width: 100vw;
+    height: 110vw;
+  }
+
+  #footerPage {
+    width: 100vw;
+    height: 110vh;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    color: white;
+    padding-top: 3vw;
+    background-color: #fe330a;
+    z-index: 0;
+  }
+  #footerMainHeading {
+    padding-top: 11vw;
+  }
+  #footerMainHeading h1 {
+    color: white;
+    line-height: 140%;
+    font-size: 22vw;
+    text-align: center;
+    position: relative;
+    z-index: 12;
+  }
+  #textAndEmail {
+    display: flex;
+    justify-content: space-between;
+    padding: 6.1vw 5.4vw 0vw 5.4vw;
+  }
+  #texts {
+    padding-top: 1.9vw;
+    padding-left: 0.3vw;
+  }
+  #email {
+    width: 27%;
+    padding-top: 2vw;
+    padding-left: 1vw;
+  }
+  #email input {
+    background-color: transparent;
+    border: none;
+    color: white;
+    border-bottom: 1px solid white;
+    font-size: 1.3vw;
+    padding-top: 2vw;
+    padding-bottom: 0.4vw;
+    width: 90%;
+  }
+  #email p {
+    font-size: 1.3vw;
+    font-weight: 100;
+  }
+  #socials {
+    border-top: 1px solid #bfbbb6;
+    padding: 2vw 2vw;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+  }
+  #footerShapes {
+    position: absolute;
+    bottom: -10%;
+    background-color: black;
+    filter: blur(20px);
+    width: 105vw;
+    border-top-right-radius: 50%;
+    left: -3%;
+    height: 25vw;
+    z-index: 3;
+  }
+  #fShapeOne {
+    z-index: 4;
+    position: absolute;
+    background-color: black;
+    filter: blur(20px);
+    width: 27vw;
+    height: 27vw;
+    right: 0;
+    border-radius: 50%;
+    animation-name: footerAnimation1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes footerAnimation1 {
+    from {
+      transform: translate(-140%, -70%) skew(0deg);
+    }
+    to {
+      transform: translate(20%, -10%) skew(30deg);
+    }
+  }
+  #fShapeTwo {
+    position: absolute;
+    background-color: black;
+    filter: blur(20px);
+    width: 27vw;
+    height: 27vw;
+    z-index: 5;
+    right: 30%;
+    border-radius: 50%;
+    animation-name: footerAnimation2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes footerAnimation2 {
+    from {
+      transform: translate(-30%, -98%) skew(0deg);
+    }
+    to {
+      transform: translate(-220%, 20%) skew(30deg);
+    }
+  }
+  #fShapeThree {
+    position: absolute;
+    background-color: black;
+    width: 60vw;
+    height: 90vh;
+    rotate: -30deg;
+    left: 0%;
+    top: -40%;
+    border-radius: 40%;
+    z-index: 6;
+  }
+  #fShapeFour {
+    position: absolute;
+    background-color: black;
+    width: 65vw;
+    height: 90vh;
+    rotate: 30deg;
+    right: 10%;
+    top: -40%;
+    border-radius: 40%;
+    z-index: 7;
+  }
+
+  /* 
+.phoneProjectImages{
+    display: none;
+} */
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+  #pageOne {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 0 2vw;
+    background-color: #efeae3;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0px;
+  }
+
+  nav div {
+    display: flex;
+    gap: 14px;
+  }
+
+  nav div p {
+    border: 0.65px solid black;
+    border-radius: 50px;
+    padding: 13px 20px;
+    font-weight: bold;
+    font-size: 17px;
+    position: relative;
+    transition: all ease 0.4s;
+    overflow: hidden;
+  }
+
+  nav div p::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50px;
+  }
+
+  nav div p:hover::after {
+    bottom: 0%;
+    transition: all ease 0.4s;
+    color: white;
+    border-radius: 0px;
+  }
+
+  nav div p a {
+    z-index: 9;
+    position: relative;
+    text-decoration: none;
+    color: black;
+  }
+
+  nav div p:hover a {
+    color: white;
+  }
+
+  #sectionTwo {
+    width: 100%;
+    height: 77vh;
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 1px solid #bfbbb6;
+    justify-content: space-between;
+  }
+
+  #sectionTwo .firstH1 {
+    line-height: 25px;
+    font-size: 2.2vw;
+    line-height: 104%;
+    padding-bottom: 4.5vw;
+    padding-left: 2vh;
+    font-weight: bolder;
+    width: 50%;
+    letter-spacing: -1px;
+  }
+
+  #sectionTwo .secondH1 {
+    padding-right: 20px;
+    padding-bottom: 9.4vh;
+    text-align: end;
+    font-weight: bolder;
+    width: 50%;
+    line-height: 78%;
+    letter-spacing: -4px;
+    font-size: 10.4vw;
+  }
+
+  #sideShapes {
+    position: absolute;
+    right: 0%;
+    top: 83vh;
+    width: 50%;
+  }
+
+  .shapeOne {
+    background: linear-gradient(#fe330a, #fe3116);
+    filter: blur(20px);
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+    color: green;
+    width: 50vw;
+    height: 50vw;
+    position: absolute;
+  }
+
+  .shapeTwo {
+    background: linear-gradient(#fe330a, #fe4416);
+    filter: blur(25px);
+    width: 30vw;
+    height: 50vw;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: animation1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  .shapeThree {
+    background: linear-gradient(#fe330a, #fe3116);
+    filter: blur(20px);
+    width: 33vw;
+    border-radius: 50%;
+    height: 30vw;
+    position: absolute;
+    animation-name: animation2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes animation1 {
+    from {
+      transform: translate(-5%, 10%);
+    }
+    to {
+      transform: translate(35%, -10%);
+    }
+  }
+
+  @keyframes animation2 {
+    from {
+      transform: translate(10%, 13%);
+    }
+    to {
+      transform: translate(-22%, 13%);
+    }
+  }
+
+  #mainVideo {
+    margin-top: 8vh;
+    border-radius: 24px;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+  }
+
+  #movingText {
+    white-space: nowrap;
+    overflow-x: auto;
+    padding: 7% 0vw;
+  }
+
+  #movingText::-webkit-scrollbar {
+    display: none;
+  }
+
+  .con h1 {
+    display: inline-block;
+    font-size: 9vw;
+  }
+
+  .container {
+    white-space: nowrap;
+  }
+
+  .con {
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: moveText;
+    animation-timing-function: linear;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+  }
+
+  .gola {
+    background-color: #fe3116;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px 30px;
+  }
+
+  @keyframes moveText {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  #sectionThree {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 12;
+    padding: 3vw 3.5vw;
+  }
+
+  #sectionThree #TP1 {
+    width: 54%;
+    line-height: 3.5vw;
+    font-weight: bolder;
+    font-size: 2vw;
+  }
+
+  #sectionThree #TP1 h1 {
+    padding-left: 30px;
+  }
+
+  #sectionThree #TP2 {
+    width: 22.8vw;
+    padding-top: 70px;
+  }
+
+  #sectionThree #TP2 p {
+    width: 85%;
+    font-size: 16px;
+  }
+
+  #sectionThree #TP2 img {
+    width: 247.81px;
+    height: 166.3px;
+    border-radius: 20px;
+    margin-bottom: 3vw;
+  }
+
+  #subTP1 {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding-left: 20px;
+  }
+
+  #subTP1 div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fe3116;
+  }
+
+  #subTP1 p {
+    font-size: 16px;
+    font-weight: 100;
+  }
+
+  #circleShapes {
+    width: 46%;
+    height: 70%;
+    left: 25%;
+    top: 30vw;
+    position: absolute;
+  }
+
+  #circleOne {
+    background-color: #ff9831;
+    filter: blur(10px);
+    width: 33vw;
+    height: 33vw;
+    border-radius: 50%;
+    position: absolute;
+    left: 6%;
+  }
+
+  #circleTwo {
+    background-color: #fe330a;
+    filter: blur(10px);
+    width: 33vw;
+    height: 33vw;
+    border-radius: 50%;
+    position: absolute;
+    left: 6%;
+    animation-name: circleAnimation;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes circleAnimation {
+    from {
+      transform: translate(11%, -11%) skew(0 deg);
+    }
+    to {
+      transform: translate(-10%, 3%) skew(10deg);
+    }
+  }
+
+  #pageTwo {
+    width: 100%;
+    position: relative;
+    background-color: #efeae3;
+    min-height: 140vh;
+  }
+
+  #pageThree {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: #efeae3;
+  }
+
+  #projectSections {
+    padding: 60px 0px;
+  }
+
+  .projects {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(207, 201, 201);
+    padding: 22px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .projects h1 {
+    position: relative;
+    z-index: 9;
+  }
+
+  .projects div {
+    position: relative;
+    z-index: 9;
+    text-align: right;
+  }
+
+  .projects::after {
+    content: "";
+    width: 100%;
+    height: 100px;
+    background-color: #ff9831;
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    transition: all ease 0.2s;
+  }
+
+  .projects:hover::after {
+    border-radius: 0%;
+    width: 100%;
+    height: 100px;
+    background-color: #ff9831;
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    transition: all ease 0.2s;
+  }
+
+  #fixedImage {
+    width: 24vw;
+    height: 64vh;
+    position: absolute;
+    top: 20%;
+    border-radius: 30px;
+    right: 20%;
+    position: fixed;
+    display: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all ease-in-out 0.1s;
+  }
+
+  #allProjectsButton p {
+    border: 1px solid black;
+    padding: 13px 20px;
+    border-radius: 50px;
+    width: fit-content;
+    font-weight: 400;
+    margin-left: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #allProjectsButton p::after {
+    content: "";
+    width: 140px;
+    height: 60px;
+    background-color: black;
+    position: absolute;
+    left: -2%;
+    bottom: -135%;
+    border-radius: 30%;
+    transition: all ease-in-out 0.4s;
+  }
+
+  #allProjectsButton p a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    z-index: 90;
+  }
+
+  #allProjectsButton p:hover::after {
+    bottom: -5%;
+    border-radius: 0px;
+  }
+
+  #allProjectsButton p:hover a {
+    color: white;
+    font-weight: 400;
+  }
+
+  #pageFour {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 12vh 2vw;
+    background-color: #efeae3;
+  }
+
+  #DPE {
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    display: flex;
+    height: 120vh;
+    align-items: center;
+  }
+
+  #DPELeft {
+    width: 50%;
+    height: 100%;
+    padding: 20vh 10vw;
+    display: flex;
+  }
+
+  #DPESidebar {
+    background-color: rgb(255, 255, 255);
+    width: 0.2vw;
+    height: 37vh;
+  }
+
+  #sideHeadings {
+    width: 80%;
+    cursor: pointer;
+  }
+
+  #sideHeadings h1 {
+    padding: 0.5vh 3vw;
+    font-size: 4.5vw;
+    color: rgb(80, 74, 69);
+    transition: all ease 0.5s;
+  }
+
+  #sideHeadings p {
+    color: white;
+    margin-top: 5vh;
+    transition: all ease-in-out 2s;
+  }
+
+  #DPEImg {
+    height: 100%;
+    width: 50%;
+    height: inherit;
+    border-radius: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all ease-in-out 0.5s;
+    background-image: url(public/img1.webp);
+  }
+
+  #pageFive {
+    width: 100%;
+    min-height: 80vh;
+    padding-top: 30px;
+    background-color: #efeae3;
+  }
+
+  .swiper-wrapper {
+    padding: 50px 65px;
+  }
+
+  .swiper {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .swiper-slide {
+    font-size: 18px;
+    padding: 0px 0px 0px 30px;
+    border-left: 0.5px solid grey;
+  }
+
+  .swiper-slide p {
+    width: 71.8%;
+    font-size: 14px;
+    margin-top: 0.9vw;
+  }
+
+  .swiper-slide img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .help {
+    margin-left: 45px;
+  }
+  #pageSix {
+    width: 100vw;
+    height: 110vw;
+  }
+
+  #footerPage {
+    width: 100vw;
+    height: 110vh;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    color: white;
+    padding-top: 3vw;
+    background-color: #fe330a;
+    z-index: 0;
+  }
+  #footerMainHeading {
+    padding-top: 11vw;
+  }
+  #footerMainHeading h1 {
+    color: white;
+    line-height: 78%;
+    font-size: 22vw;
+    text-align: center;
+
+    position: relative;
+    z-index: 12;
+  }
+  #textAndEmail {
+    display: flex;
+    justify-content: space-between;
+    padding: 6.1vw 5.4vw 0vw 5.4vw;
+  }
+  #texts {
+    padding-top: 1.9vw;
+    padding-left: 0.3vw;
+  }
+  #email {
+    width: 27%;
+    padding-top: 2vw;
+    padding-left: 1vw;
+  }
+  #email input {
+    background-color: transparent;
+    border: none;
+    color: white;
+    border-bottom: 1px solid white;
+    font-size: 1.3vw;
+    padding-top: 2vw;
+    padding-bottom: 0.4vw;
+    width: 90%;
+  }
+  #email p {
+    font-size: 1.3vw;
+    font-weight: 100;
+  }
+  #socials {
+    border-top: 1px solid #bfbbb6;
+    padding: 2vw 2vw;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+  }
+  #footerShapes {
+    position: absolute;
+    bottom: -10%;
+    background-color: black;
+    filter: blur(20px);
+    width: 105vw;
+    border-top-right-radius: 50%;
+    left: -3%;
+    height: 25vw;
+    z-index: 3;
+  }
+  #fShapeOne {
+    z-index: 4;
+    position: absolute;
+    background-color: black;
+    filter: blur(20px);
+    width: 27vw;
+    height: 27vw;
+    right: 0;
+    border-radius: 50%;
+    animation-name: footerAnimation1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes footerAnimation1 {
+    from {
+      transform: translate(-140%, -70%) skew(0deg);
+    }
+    to {
+      transform: translate(20%, -10%) skew(30deg);
+    }
+  }
+  #fShapeTwo {
+    position: absolute;
+    background-color: black;
+    filter: blur(20px);
+    width: 27vw;
+    height: 27vw;
+    z-index: 5;
+    right: 30%;
+    border-radius: 50%;
+    animation-name: footerAnimation2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes footerAnimation2 {
+    from {
+      transform: translate(-30%, -98%) skew(0deg);
+    }
+    to {
+      transform: translate(-220%, 20%) skew(30deg);
+    }
+  }
+  #fShapeThree {
+    position: absolute;
+    background-color: black;
+    width: 60vw;
+    height: 90vh;
+    rotate: -30deg;
+    left: 0%;
+    top: -40%;
+    border-radius: 40%;
+    z-index: 6;
+  }
+  #fShapeFour {
+    position: absolute;
+    background-color: black;
+    width: 65vw;
+    height: 90vh;
+    rotate: 30deg;
+    right: 10%;
+    top: -40%;
+    border-radius: 40%;
+    z-index: 7;
+  }
+
+  #menuForPhone {
+    display: none;
+  }
+
+  .phoneProjectImages {
+    display: none;
+  }
+}
