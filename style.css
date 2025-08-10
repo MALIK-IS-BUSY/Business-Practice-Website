@@ -447,7 +447,7 @@ body::-webkit-scrollbar {
     background-repeat: no-repeat;
     background-size: cover;
     transition: all ease-in-out 0.5s;
-    background-image: url(public/img1.webp);
+    background-image: url(/img1.webp);
   }
 
   #pageFive {
@@ -1086,7 +1086,7 @@ body::-webkit-scrollbar {
     background-repeat: no-repeat;
     background-size: cover;
     transition: all ease-in-out 0.5s;
-    background-image: url(public/img1.webp);
+    background-image: url(/img1.webp);
   }
 
   #pageFive {
